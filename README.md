@@ -20,7 +20,7 @@ Front-end Architect 2: null;
 
 UI Developer 3: null;
 
-Trello Board: coming soon
+Trello Board: https://trello.com/b/Nj5wqWrW
 
 MVP Requirements
 
