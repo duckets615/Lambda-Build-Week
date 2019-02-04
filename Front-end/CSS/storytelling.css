@@ -145,6 +145,7 @@ h5 {
 }
 .navigation-back {
   background-color: #474545;
+  max-width: 500px;
 }
 .navigation {
   display: flex;
@@ -168,14 +169,17 @@ h5 {
 }
 .mid-section {
   display: flex;
+  max-width: 500px;
   border: 1px solid black;
-  height: 1000px;
+}
+.headerTwo {
+  border: 1px solid black;
   width: 100%;
 }
 .topHeader {
-  margin-left: 200px ;
-  margin-top: 20px;
+  max-width: 200px;
   border: 1px solid black;
+  margin: 10px auto;
   height: 60px;
   background: #6E0DF9;
   color: yellow;
@@ -183,16 +187,16 @@ h5 {
 }
 .topHeader h2 {
   margin: 15px;
-  font-size: 3rem;
+  font-size: 2rem;
   color: pink;
   text-align: center;
 }
 .countries {
   border: 1px solid black;
-  width: 300px;
+  max-width: 100px;
 }
 .countries h3 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: center;
   padding: 10px auto;
   height: 50px;
@@ -202,7 +206,7 @@ h5 {
 .countries .selection {
   margin-top: 10px;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1rem;
   color: blue;
 }
 .countries .selection .tab {
@@ -212,7 +216,20 @@ h5 {
   color: green;
 }
 .stories {
-  border: 3px solid red;
+  margin-top: 20px;
+  width: 100%;
+}
+.stories h4 {
+  background: #6E0DF9;
+  color: yellow;
+  height: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 5px;
+}
+.stories .peopleStories {
+  border: 2px solid #6E0DF9;
+  height: 500px;
 }
 footer {
   background: black;
