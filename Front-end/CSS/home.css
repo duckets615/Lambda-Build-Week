@@ -1,17 +1,79 @@
 body {
-    background: darkgray;
+    background: rgb(61, 61, 61);
+}
+
+.container {
+    display: flex;
 }
 
 nav {
-    background: rgb(77, 74, 74);
-    
+    background:rgb(44, 43, 43);
 }
 
 nav a {
     color: white;
+    padding: 10px;
+
 }
 
 header button {
     background: rgba(224, 39, 39, 0.767);
     color: white;
 }
+
+.top-content {
+    ;
+}
+
+.top-content img {
+    width: 1300px;
+    height: 300px;
+}
+
+.first-card img {
+    width: 570px;
+    height: 300px;
+}
+
+.second-card img {
+    width: 570px;
+    height: 300px;
+}
+
+.third-card img {
+    width: 570px;
+    height: 300px;
+}
+
+.forth-card img {
+    width: 570px;
+    height: 300px;
+}
+
+.about-us img {
+    width: 1000px;
+    height: 500px;
+}
+
+footer {
+    margin-left: 500px;
+}
+
+
+
+@media screen and (max-width: 1680px) {
+
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 736px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
