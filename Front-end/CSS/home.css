@@ -1,0 +1,17 @@
+body {
+    background: darkgray;
+}
+
+nav {
+    background: rgb(77, 74, 74);
+    
+}
+
+nav a {
+    color: white;
+}
+
+header button {
+    background: rgba(224, 39, 39, 0.767);
+    color: white;
+}
