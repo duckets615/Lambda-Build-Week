@@ -166,3 +166,54 @@ h5 {
   border-radius: 30px;
   height: 50px;
 }
+.mid-section {
+  display: flex;
+  border: 1px solid black;
+  height: 1000px;
+  width: 100%;
+}
+.topHeader {
+  margin-left: 200px ;
+  margin-top: 20px;
+  border: 1px solid black;
+  height: 60px;
+  background: #6E0DF9;
+  color: yellow;
+  border-radius: 20px;
+}
+.topHeader h2 {
+  margin: 15px;
+  font-size: 3rem;
+  color: pink;
+  text-align: center;
+}
+.countries {
+  border: 1px solid black;
+  width: 300px;
+}
+.countries h3 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px auto;
+  height: 50px;
+  background: #6E0DF9;
+  color: yellow;
+}
+.countries .selection {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: blue;
+}
+.countries .selection .tab {
+  margin-bottom: 20px;
+}
+.countries .selection .active-tab {
+  color: green;
+}
+.stories {
+  border: 3px solid red;
+}
+footer {
+  background: black;
+}
