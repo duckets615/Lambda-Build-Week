@@ -7,50 +7,34 @@
     .container {
         margin: 0 auto;
 		max-width: 100%;
-		width: 480px;
+        width: 480px;
+        cursor: pointer;
     }
 
-    /* @media screen and (max-width: 1680px) {
-
-        .container {
-            width: 1200px;
-        }
-
-    }
-
-    @media screen and (max-width: 1280px) {
-
-        .container {
-            width: calc(100% - 40px);
-        }
-
-    }
-
-    @media screen and (max-width: 980px) {
-
-        .container {
-            width: calc(100% - 50px);
-        }
-
-    }
-
-    @media screen and (max-width: 736px) {
-
-        .container {
-            width: calc(100% - 40px);
-        }
-
-    } */
-
-    
     nav {
         background:rgb(44, 43, 43);
     }
     
     nav a {
-        color: white;
-        padding: 10px;
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s
     }
+      .change .a1 {
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+      }
+
+      .change .a2 {
+          opacity: 0;
+      }
+
+      .change .a3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+      }
     
     header .signup {
         background: rgba(224, 39, 39, 0.767);
