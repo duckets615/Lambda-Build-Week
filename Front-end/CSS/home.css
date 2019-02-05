@@ -13,16 +13,16 @@ nav {
 nav a {
     color: white;
     padding: 10px;
-
 }
 
-header button {
+header .signup {
     background: rgba(224, 39, 39, 0.767);
     color: white;
+    margin-left: 400px;
 }
 
 .top-content {
-    ;
+    
 }
 
 .top-content img {
@@ -59,13 +59,7 @@ footer {
     margin-left: 500px;
 }
 
-
-
-@media screen and (max-width: 1680px) {
-
-}
-
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 480px) {
 
 }
 
@@ -73,7 +67,16 @@ footer {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 980px) {
 
 }
+
+@media screen and (max-width: 1680px) {
+
+}
+
+
+
+
+
 
