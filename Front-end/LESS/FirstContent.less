@@ -2,6 +2,10 @@
     img{
         width: 100%;
         height: 150px;
+
+        @media@desktop {
+            height: 400px;
+        }
     }
 }
 
@@ -10,16 +14,34 @@
         text-align: center;
         font-size: 2rem;
         margin-top: 10px;
+        @media@desktop {
+            font-size: 3rem;
+            margin-top: 30px;
+        }
     }
 }
 
 .first-contnet{
+
+    @media@desktop {
+        display: flex;
+    }
     
     .first-mid-img{
         display:none;
+
+        @media@desktop {
+            display: block;
+            width: 33%;
+            height: 200px;
+        }
     }
     .second-commenter{
         display: none;
+
+        @media@desktop {
+            display: flex;
+        }
     }
 }
 

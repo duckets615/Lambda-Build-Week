@@ -1,15 +1,18 @@
 .navigation-back{
-    background: linear-gradient(to right, #353839 21%, #b0b0b0 125%);
+    
     // max-width: 500px;  
 }
 
 .navigation{
-    
+    background: linear-gradient(to right, #353839 21%, #b0b0b0 125%);
+    max-width: 1000px;
     display: flex;
     // flex-direction: row;
     justify-content: center;
-    text-align: center;
-    border: 1px solid black;
+    @media(min-width:500px) {
+        position: fixed;
+        width:100%;
+    }
     
     h1 {
         font-size: 4rem;
