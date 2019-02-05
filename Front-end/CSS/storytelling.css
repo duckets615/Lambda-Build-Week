@@ -231,7 +231,7 @@ h5 {
   padding-top: 5px;
 }
 .stories .peopleStories {
-  border: 2px solid #6E0DF9;
+  border: 1px solid #6E0DF9;
   height: 500px;
 }
 .stories .card {
@@ -269,10 +269,24 @@ h5 {
   font-weight: bold;
 }
 footer {
-  background: black;
+  text-align: center;
+  background-color: #474545;
+  height: 60px;
+}
+footer nav {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+footer nav a {
+  text-decoration: none;
+  color: white;
+}
+footer .copy {
+  margin-top: 10px ;
+  color: #f00000;
 }
 body {
-  border: 5px solid red;
   max-width: 1000px;
   margin: auto;
 }
