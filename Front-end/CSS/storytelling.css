@@ -166,6 +166,44 @@ h5 {
   cursor: pointer;
   margin-left: 43%;
 }
+.menu {
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 150px;
+  height: 50vh;
+  /* This give the height 100% of the screen or, '100% of View Height' */
+  background: linear-gradient(to bottom, #353839 0%, #b0b0b0 138%);
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  z-index: 2;
+  /* This set the layer level of the element, it has precendence over initial level of 1*/
+}
+.menu nav {
+  display: flex;
+  flex-direction: column;
+}
+.menu nav a:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: all 0.3s ease;
+}
+.menu nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: yellow;
+  padding: 5px;
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid yellow;
+  border-radius: 50px;
+}
+.menu--open {
+  display: block;
+}
 @media (min-width: 500px) {
   .mid-section {
     padding-top: 80px;
