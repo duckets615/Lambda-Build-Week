@@ -146,6 +146,7 @@ h5 {
 .navigation {
   background: linear-gradient(to right, #353839 21%, #b0b0b0 125%);
   max-width: 1000px;
+  z-index: 9999;
   display: flex;
   justify-content: center;
 }
