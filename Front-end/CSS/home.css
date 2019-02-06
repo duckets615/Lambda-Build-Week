@@ -8,6 +8,7 @@
         margin: 0 auto;
 		max-width: 100%;
         width: 480px;
+        display: flex;
     }
 
     nav {
@@ -17,6 +18,17 @@
     header .signup {
         background: rgba(224, 39, 39, 0.767);
         color: white;
+    }
+
+    header {
+        margin: auto;
+        width: 95%;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    h1 {
+        text-align: center;
     }
     
     .top-content a {

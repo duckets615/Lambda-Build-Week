@@ -14,8 +14,6 @@
 
     nav {
         background:rgb(44, 43, 43);
-        justify-content: space-between;
-        justify-content: center;
     }
 
     nav a {
@@ -59,6 +57,7 @@
     .email {
         display: flex;
         margin-bottom: 10px;
+        margin-left: 20px;
     }
 
 }
