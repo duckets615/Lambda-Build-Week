@@ -94,8 +94,45 @@ body {
   margin: 0 auto;
   max-width: 500px;
 }
-nav {
-  background: #2c2b2b;
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(224, 39, 39, 0.767);
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+nav span {
+  background: rgba(224, 39, 39, 0.767);
+  color: white;
 }
 header .signup {
   background: rgba(224, 39, 39, 0.767);
@@ -104,8 +141,8 @@ header .signup {
 header {
   margin: auto;
   width: 95%;
-  border: 1px solid black;
   padding: 10px;
+  display: inline-flex;
 }
 h1 {
   text-align: center;
@@ -116,13 +153,13 @@ h1 {
   color: white;
 }
 .top-img {
-  width: 100%;
+  width: 500px;
   height: 200px;
-  border: 1px solid red;
+  border: 1px solid black;
 }
 .first-card img {
-  width: 450px;
-  height: 250px;
+  width: 500px;
+  height: 200px;
 }
 .second-card img {
   width: 450px;
@@ -201,7 +238,6 @@ footer {
   header .signup {
     background: rgba(224, 39, 39, 0.767);
     color: white;
-    margin-left: 400px;
   }
   .top-content img {
     width: 1300px;
