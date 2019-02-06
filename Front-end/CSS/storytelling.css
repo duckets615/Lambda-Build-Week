@@ -200,7 +200,7 @@ h5 {
   border: 1px solid yellow;
   border-radius: 50px;
 }
-.menu--open {
+.menu-open {
   display: block;
 }
 .menuNone {
