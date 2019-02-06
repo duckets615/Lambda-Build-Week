@@ -237,7 +237,7 @@ p {
 }
 @media (min-width: 500px) {
   .first-image img {
-    height: 400px;
+    height: 650px;
   }
 }
 .commenters img {
