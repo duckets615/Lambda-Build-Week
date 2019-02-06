@@ -166,6 +166,7 @@ h5 {
   position: absolute;
   cursor: pointer;
   margin-left: 43%;
+  max-width: 60px;
 }
 .menu {
   display: none;
@@ -203,7 +204,10 @@ h5 {
 .menu-open {
   display: block;
 }
-.menuNone {
+.x-button {
+  max-width: 60px;
+}
+.none {
   display: none;
 }
 @media (min-width: 500px) {
