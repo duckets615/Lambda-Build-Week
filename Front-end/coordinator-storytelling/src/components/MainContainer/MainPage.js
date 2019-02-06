@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import Navigation from './Navigation'
 import Content from './Content'
+import Navigation from './Navigation';
 
 class MainPage extends Component {
 
   render() {
     return (
-     <Navigation />,
-     <Content />
-    );
+    <div>
+      <Navigation />
+      
+    </div>
+    )
   }
 
-}
+} 
 
 export default MainPage;

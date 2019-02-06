@@ -1,10 +1,18 @@
-.App {
-  text-align: center;
-  display: flex;
-}
+ body {
+        background: lightgrey;
+        font-family: 'Yanone Kaffeesatz';
+        margin: 0 auto;
+    }
 
+ .main {
+  margin: 0 auto;
+  
+ }
 .navigation {
-  background:rgb(44, 43, 43);
+  margin: 0 auto;
+  width: 480px;
+  cursor: pointer;
+ 
 }
 
 .navigation a{
@@ -12,8 +20,57 @@
   padding: 10px;
 }
 
+.navigation nav {
+  background:rgb(44, 43, 43);
+}
+
+nav a {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s
+}
+
+
 .navigation .signup {
-  background: rgba(224, 39, 39, 0.767);
-  color: white;
-  margin-left: 400px;
+  
+    background: rgba(224, 39, 39, 0.767);
+    color: white;
+    border-radius: 50%;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.top-content img {
+  width: 450px;
+  height: 200px;
+}
+
+.first-card img {
+  width: 570px;
+  height: 300px;
+}
+
+.second-card img {
+  width: 570px;
+  height: 300px;
+}
+
+.third-card img {
+  width: 570px;
+  height: 300px;
+}
+
+.forth-card img {
+  width: 570px;
+  height: 300px;
+}
+
+.about-us img {
+  width: 1000px;
+  height: 500px;
 }
