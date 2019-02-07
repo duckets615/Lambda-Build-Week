@@ -18,3 +18,5 @@ class Menu {
 
 
 let menus = document.querySelectorAll('.navigation').forEach(element => new Menu(element))
+
+
