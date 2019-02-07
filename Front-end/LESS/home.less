@@ -1,19 +1,38 @@
+@import "reset.less";
+@import "global.less";
+@import "container.less";    
+@import "header-nav.less";
+@import "mid-content.less";    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         body {
         background: lightgrey;
     }
     
-    .container {
-        margin: 0 auto;
-        max-width: 500px;
-    }
+    // .container {
+    //     margin: 0 auto;
+    //     max-width: 1000px;
+    // }
 
     .sidenav {
         height: 100%; /* 100% Full-height */
         width: 0; /* 0 width - change this with JavaScript */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
+        position: absolute; /* Stay in place */
+        z-index: 2; /* Stay on top */
         top: 0;
-        left: 0;
+        left: auto;
         background-color: black;
         overflow-x: hidden; /* Disable horizontal scroll */
         padding-top: 60px; /* Place content 60px from the top */
@@ -51,253 +70,229 @@
         color: white;
     }
 
-    header .signup {
-        background: rgba(224, 39, 39, 0.767);
-        color: white;
-        width: 150px;
-        margin-left: 0;
-        text-align: center;
-    }
+    // 
     
     header {
-        margin: auto;
-        width: 95%;
-        padding: 10px;
-        display: inline-flex;
+        display: flex;
+        justify-content: space-between;
     }
 
     h1 {
         text-align: center;
     }
     
-    .top-content a {
-        font-family: 'Yanone Kaffeesatz';
-        background: rgba(224, 39, 39, 0.767);
-        color: white;
-    }
-
-    .top-content {
-       display: flex;
-       flex-direction: column;
-       align-content: center;
-    }
     
-    .top-img {
-        width: 500px;
-        height: 200px;
-        border: 1px solid black;
-    }
     
-    .first-card img {
-        width: 500px;
-        height: 200px;
-    }
-    
-    .second-card img {
-        width: 450px;
-        height: 300px;
-    }
-    
-    .third-card img {
-        width: 450px;
-        height: 300px;
-    }
-    
-    .forth-card img {
-        width: 450px;
-        height: 300px;
-    }
-    
-    .about-us img {
-        width: 450px;
-        height: 300px;
-    }
-    
-    footer {
-        margin-left: 500px;
-    }
-
-
-    @media screen and (max-width: 736px) {
-    body {
-        background: rgb(126, 124, 124);
-    }
-    
-    nav {
-        background:rgb(44, 43, 43);
-    }
-    
-    nav a {
-        color: white;
-        padding: 10px;
-    }
-    
-    header .signup {
-        background: rgba(224, 39, 39, 0.767);
-        color: white;
-    }
-    
-    .top-content img {
-        width: 1300px;
-        height: 300px;
-    }
-    
-    .first-card img {
-        width: 570px;
-        height: 300px;
-    }
-    
-    .second-card img {
-        width: 570px;
-        height: 300px;
-    }
-    
-    .third-card img {
-        width: 570px;
-        height: 300px;
-    }
-    
-    .forth-card img {
-        width: 570px;
-        height: 300px;
-    }
-    
-    .about-us img {
-        width: 1000px;
-        height: 500px;
-    }
-    
-    footer {
-        margin-left: 500px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    body {
-        background: rgb(61, 61, 61);
-    }
-    
-    // .container {
-    //     display: flex;
+    // .first-card img {
+    //     width: 500px;
+    //     height: 200px;
     // }
     
-    nav {
-        background:rgb(44, 43, 43);
-    }
+    // .second-card img {
+    //     width: 450px;
+    //     height: 300px;
+    // }
     
-    nav a {
-        color: white;
-        padding: 10px;
-    }
+    // .third-card img {
+    //     width: 450px;
+    //     height: 300px;
+    // }
     
-    header .signup {
-        background: rgba(224, 39, 39, 0.767);
-        color: white;
-    }
+    // .forth-card img {
+    //     width: 450px;
+    //     height: 300px;
+    // }
     
-    .top-content img {
-        width: 500px;
-        height: 300px;
-    }
+    // .about-us img {
+    //     width: 450px;
+    //     height: 300px;
+    // }
     
-    .first-card img {
-        width: 570px;
-        height: 300px;
-    }
-    
-    .second-card img {
-        width: 570px;
-        height: 300px;
-    }
-    
-    .third-card img {
-        width: 570px;
-        height: 300px;
-    }
-    
-    .forth-card img {
-        width: 570px;
-        height: 300px;
-    }
-    
-    .about-us img {
-        width: 1000px;
-        height: 500px;
-    }
-    
-    footer {
-        margin-left: 500px;
-    }
-    }
+    // footer {
+    //     margin-left: 500px;
+    // }
 
-@media screen and (max-width: 1920px) {
 
-body {
-    background: rgb(61, 61, 61);
-}
-
-// .container {
-//     display: flex;
+//     @media screen and (max-width: 736px) {
+//     body {
+//         background: rgb(126, 124, 124);
+//     }
+    
+//     nav {
+//         background:rgb(44, 43, 43);
+//     }
+    
+//     nav a {
+//         color: white;
+//         padding: 10px;
+//     }
+    
+//     header .signup {
+//         background: rgba(224, 39, 39, 0.767);
+//         color: white;
+//     }
+    
+//     .top-content img {
+//         width: 1300px;
+//         height: 300px;
+//     }
+    
+//     .first-card img {
+//         width: 570px;
+//         height: 300px;
+//     }
+    
+//     .second-card img {
+//         width: 570px;
+//         height: 300px;
+//     }
+    
+//     .third-card img {
+//         width: 570px;
+//         height: 300px;
+//     }
+    
+//     .forth-card img {
+//         width: 570px;
+//         height: 300px;
+//     }
+    
+//     .about-us img {
+//         width: 1000px;
+//         height: 500px;
+//     }
+    
+//     footer {
+//         margin-left: 500px;
+//     }
 // }
 
-nav {
-    background:rgb(44, 43, 43);
-}
+// @media screen and (max-width: 900px) {
+//     body {
+//         background: rgb(61, 61, 61);
+//     }
+    
+//     // .container {
+//     //     display: flex;
+//     // }
+    
+//     nav {
+//         background:rgb(44, 43, 43);
+//     }
+    
+//     nav a {
+//         color: white;
+//         padding: 10px;
+//     }
+    
+//     header .signup {
+//         background: rgba(224, 39, 39, 0.767);
+//         color: white;
+//     }
+    
+//     .top-content img {
+//         width: 500px;
+//         height: 300px;
+//     }
+    
+//     .first-card img {
+//         width: 570px;
+//         height: 300px;
+//     }
+    
+//     .second-card img {
+//         width: 570px;
+//         height: 300px;
+//     }
+    
+//     .third-card img {
+//         width: 570px;
+//         height: 300px;
+//     }
+    
+//     .forth-card img {
+//         width: 570px;
+//         height: 300px;
+//     }
+    
+//     .about-us img {
+//         width: 1000px;
+//         height: 500px;
+//     }
+    
+//     footer {
+//         margin-left: 500px;
+//     }
+//     }
 
-nav a {
-    color: white;
-    padding: 10px;
-}
+// @media screen and (max-width: 1920px) {
 
-header .signup {
-    background: rgba(224, 39, 39, 0.767);
-    color: white;
-}
+// body {
+//     background: rgb(61, 61, 61);
+// }
 
-header {
-    display: inline-flex;
-    display: flex;
-    flex-direction: row;
-}
+// // .container {
+// //     display: flex;
+// // }
 
-.top-content img {
-    width: 500px;
-    height: 300px;
-}
+// nav {
+//     background:rgb(44, 43, 43);
+// }
 
-.first-card img {
-    width: 500px;
-    height: 300px;
-}
+// nav a {
+//     color: white;
+//     padding: 10px;
+// }
 
-.second-card img {
-    width: 570px;
-    height: 300px;
-}
+// header .signup {
+//     background: rgba(224, 39, 39, 0.767);
+//     color: white;
+// }
 
-.third-card img {
-    width: 570px;
-    height: 300px;
-}
+// header {
+//     display: inline-flex;
+//     display: flex;
+//     flex-direction: row;
+// }
 
-.forth-card img {
-    width: 570px;
-    height: 300px;
-}
+// .top-content img {
+//     width: 500px;
+//     height: 300px;
+// }
 
-.first-seg {
-    display: inline-block;
-}
+// .first-card img {
+//     width: 500px;
+//     height: 300px;
+// }
 
-.second-seg {
-    display: inline-block;
-}
+// .second-card img {
+//     width: 570px;
+//     height: 300px;
+// }
 
-.about-us img {
-    width: 1000px;
-    height: 500px;
-}
+// .third-card img {
+//     width: 570px;
+//     height: 300px;
+// }
 
-footer {
-    margin-left: 500px;
-}};
+// .forth-card img {
+//     width: 570px;
+//     height: 300px;
+// }
+
+// .first-seg {
+//     display: inline-block;
+// }
+
+// .second-seg {
+//     display: inline-block;
+// }
+
+// .about-us img {
+//     max-width: 500px;;
+//     height: 500px;
+// }
+
+// footer {
+//     margin-left: 500px;
+// }};

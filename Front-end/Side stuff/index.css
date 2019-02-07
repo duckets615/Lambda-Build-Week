@@ -80,7 +80,7 @@ body {
 }
 .container {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 1000px;
 }
 .sidenav {
   height: 100%;
@@ -143,17 +143,19 @@ h1 {
   text-align: center;
 }
 .top-content a {
-  font-family: 'Yanone Kaffeesatz';
   background: rgba(224, 39, 39, 0.767);
   color: white;
+  max-width: 130px;
+  margin: 0 auto;
 }
 .top-content {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  text-align: center;
+  border: 1px solid red;
 }
 .top-img {
-  width: 500px;
+  width: 100%;
   height: 200px;
   border: 1px solid black;
 }
@@ -179,146 +181,6 @@ h1 {
 }
 footer {
   margin-left: 500px;
-}
-@media screen and (max-width: 736px) {
-  body {
-    background: #7e7c7c;
-  }
-  nav {
-    background: #2c2b2b;
-  }
-  nav a {
-    color: white;
-    padding: 10px;
-  }
-  header .signup {
-    background: rgba(224, 39, 39, 0.767);
-    color: white;
-  }
-  .top-content img {
-    width: 1300px;
-    height: 300px;
-  }
-  .first-card img {
-    width: 570px;
-    height: 300px;
-  }
-  .second-card img {
-    width: 570px;
-    height: 300px;
-  }
-  .third-card img {
-    width: 570px;
-    height: 300px;
-  }
-  .forth-card img {
-    width: 570px;
-    height: 300px;
-  }
-  .about-us img {
-    width: 1000px;
-    height: 500px;
-  }
-  footer {
-    margin-left: 500px;
-  }
-}
-@media screen and (max-width: 900px) {
-  body {
-    background: #3d3d3d;
-  }
-  nav {
-    background: #2c2b2b;
-  }
-  nav a {
-    color: white;
-    padding: 10px;
-  }
-  header .signup {
-    background: rgba(224, 39, 39, 0.767);
-    color: white;
-  }
-  .top-content img {
-    width: 500px;
-    height: 300px;
-  }
-  .first-card img {
-    width: 570px;
-    height: 300px;
-  }
-  .second-card img {
-    width: 570px;
-    height: 300px;
-  }
-  .third-card img {
-    width: 570px;
-    height: 300px;
-  }
-  .forth-card img {
-    width: 570px;
-    height: 300px;
-  }
-  .about-us img {
-    width: 1000px;
-    height: 500px;
-  }
-  footer {
-    margin-left: 500px;
-  }
-}
-@media screen and (max-width: 1920px) {
-  body {
-    background: #3d3d3d;
-  }
-  nav {
-    background: #2c2b2b;
-  }
-  nav a {
-    color: white;
-    padding: 10px;
-  }
-  header .signup {
-    background: rgba(224, 39, 39, 0.767);
-    color: white;
-  }
-  header {
-    display: inline-flex;
-    display: flex;
-    flex-direction: row;
-  }
-  .top-content img {
-    width: 500px;
-    height: 300px;
-  }
-  .first-card img {
-    width: 500px;
-    height: 300px;
-  }
-  .second-card img {
-    width: 570px;
-    height: 300px;
-  }
-  .third-card img {
-    width: 570px;
-    height: 300px;
-  }
-  .forth-card img {
-    width: 570px;
-    height: 300px;
-  }
-  .first-seg {
-    display: inline-block;
-  }
-  .second-seg {
-    display: inline-block;
-  }
-  .about-us img {
-    width: 1000px;
-    height: 500px;
-  }
-  footer {
-    margin-left: 500px;
-  }
 }
 @media screen and (max-width: 500px) {
   body {
