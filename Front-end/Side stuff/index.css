@@ -1,0 +1,269 @@
+@media screen and (max-width: 500px) {
+  body {
+    background: lightgrey;
+    font-family: 'Yanone Kaffeesatz';
+  }
+  nav a {
+    color: white;
+  }
+  .title img {
+    width: 450px;
+    height: 200px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .para {
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+  textarea {
+    width: 250px;
+    height: 30px;
+    border: 1px solid rgba(224, 39, 39, 0.767);
+    text-align: center;
+    resize: none;
+    padding: 5px;
+  }
+  button {
+    background: rgba(224, 39, 39, 0.767);
+    width: 170px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid rgba(124, 29, 29, 0.767);
+  }
+  .email {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background: lightgrey;
+    font-family: 'Yanone Kaffeesatz';
+  }
+  nav a {
+    color: white;
+  }
+  textarea {
+    width: 250px;
+    height: 30px;
+    border: 1px solid rgba(224, 39, 39, 0.767);
+    text-align: center;
+    resize: none;
+    padding: 5px;
+  }
+  button {
+    background: rgba(224, 39, 39, 0.767);
+    width: 170px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid rgba(124, 29, 29, 0.767);
+  }
+  .search {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  .questions {
+    text-align: center;
+  }
+  .contact {
+    text-align: center;
+  }
+}
+body {
+  background: lightgrey;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(224, 39, 39, 0.767);
+  transition: 0.3s;
+  display: block;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav :hover {
+  cursor: pointer;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+nav span {
+  background: rgba(224, 39, 39, 0.767);
+  color: white;
+}
+header .signup {
+  background: rgba(224, 39, 39, 0.767);
+  color: white;
+  width: 150px;
+  margin-left: 0;
+  text-align: center;
+}
+header {
+  margin: auto;
+  width: 95%;
+  padding: 10px;
+  display: inline-flex;
+}
+h1 {
+  text-align: center;
+}
+.top-content a {
+  background: rgba(224, 39, 39, 0.767);
+  color: white;
+  max-width: 130px;
+  margin: 0 auto;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid red;
+}
+.top-img {
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
+}
+.first-card img {
+  width: 500px;
+  height: 200px;
+}
+.second-card img {
+  width: 450px;
+  height: 300px;
+}
+.third-card img {
+  width: 450px;
+  height: 300px;
+}
+.forth-card img {
+  width: 450px;
+  height: 300px;
+}
+.about-us img {
+  width: 450px;
+  height: 300px;
+}
+footer {
+  margin-left: 500px;
+}
+@media screen and (max-width: 500px) {
+  body {
+    background: lightgrey;
+    font-family: 'Yanone Kaffeesatz';
+  }
+  .container {
+    margin: 0 auto;
+  }
+  nav a {
+    color: white;
+  }
+  h1 {
+    text-align: center;
+  }
+  .why {
+    text-align: center;
+  }
+  button {
+    background: rgba(224, 39, 39, 0.767);
+    width: 170px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid rgba(124, 29, 29, 0.767);
+  }
+  .add-file {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  .add-file textarea {
+    width: 250px;
+    height: 30px;
+    border: 1px solid rgba(224, 39, 39, 0.767);
+    text-align: center;
+    resize: none;
+    padding: 5px;
+  }
+  .write {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  .write textarea {
+    width: 250px;
+    height: 30px;
+    border: 1px solid rgba(224, 39, 39, 0.767);
+    text-align: center;
+    resize: none;
+    padding: 5px;
+  }
+  .submit {
+    background: rgba(224, 39, 39, 0.767);
+    width: 158px;
+    height: 16px;
+    padding: 5px;
+    border: 2px solid rgba(124, 29, 29, 0.767);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background: lightgrey;
+    font-family: 'Yanone Kaffeesatz';
+  }
+  .container {
+    margin: 0 auto;
+  }
+  nav a {
+    color: white;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+.top-content {
+  max-width: 400px;
+}
+.top-content img {
+  max-width: 100%;
+}
+@media (min-width: 500px) {
+  .top-content {
+    display: none;
+  }
+}

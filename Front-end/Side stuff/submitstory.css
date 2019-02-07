@@ -1,0 +1,78 @@
+@media screen and (max-width: 500px) {
+
+    body {
+        background: lightgrey;
+        font-family: 'Yanone Kaffeesatz';
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 480px;
+        display: flex;
+    }
+
+    nav {
+        background:rgb(44, 43, 43);
+    }
+
+    nav a {
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .why {
+        text-align: center;
+    }
+
+    button {
+        background: rgba(224, 39, 39, 0.767);
+        width: 170px;
+        height: 30px;
+        padding: 5px;
+        border: 2px solid rgba(124, 29, 29, 0.767);
+    }
+
+    .add-file {
+        display: flex;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .add-file textarea {
+        width: 250px;
+        height: 30px;
+        border: 1px solid rgba(224, 39, 39, 0.767);
+        text-align: center;
+        resize: none;
+        padding: 5px;
+    }
+
+    .write {
+        display: flex;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .write textarea {
+        width: 250px;
+        height: 30px;
+        border: 1px solid rgba(224, 39, 39, 0.767);
+        text-align: center;
+        resize: none;
+        padding: 5px;
+    }
+
+    .submit {
+        background: rgba(224, 39, 39, 0.767);
+        width: 158px;
+        height: 16px;
+        padding: 5px;
+        border: 2px solid rgba(124, 29, 29, 0.767);
+        text-align: center;
+    }
+
+}
