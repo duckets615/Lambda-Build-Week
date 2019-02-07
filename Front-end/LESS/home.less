@@ -4,7 +4,7 @@
     
     .container {
         margin: 0 auto;
-		max-width: 500px;
+        max-width: 500px;
     }
 
     .sidenav {
@@ -26,11 +26,15 @@
         font-size: 25px;
         color: rgba(224, 39, 39, 0.767);
         transition: 0.3s;
-        // display: block;
+        display: block;
       }
 
       .sidenav a:hover {
         color: #f1f1f1;
+      }
+
+      .sidenav :hover {
+          cursor: pointer;
       }
 
       .sidenav .closebtn {
@@ -50,6 +54,9 @@
     header .signup {
         background: rgba(224, 39, 39, 0.767);
         color: white;
+        width: 150px;
+        margin-left: 0;
+        text-align: center;
     }
     
     header {
@@ -67,6 +74,12 @@
         font-family: 'Yanone Kaffeesatz';
         background: rgba(224, 39, 39, 0.767);
         color: white;
+    }
+
+    .top-content {
+       display: flex;
+       flex-direction: column;
+       align-content: center;
     }
     
     .top-img {
@@ -110,10 +123,6 @@
         background: rgb(126, 124, 124);
     }
     
-    // .container {
-    //     // display: flex;
-    // }
-    
     nav {
         background:rgb(44, 43, 43);
     }
@@ -126,7 +135,6 @@
     header .signup {
         background: rgba(224, 39, 39, 0.767);
         color: white;
-        margin-left: 400px;
     }
     
     .top-content img {
@@ -188,7 +196,7 @@
     }
     
     .top-content img {
-        width: 1300px;
+        width: 500px;
         height: 300px;
     }
     
@@ -244,20 +252,21 @@ nav a {
 header .signup {
     background: rgba(224, 39, 39, 0.767);
     color: white;
-    margin-left: 400px;
 }
 
 header {
     display: inline-flex;
+    display: flex;
+    flex-direction: row;
 }
 
 .top-content img {
-    width: 1300px;
+    width: 500px;
     height: 300px;
 }
 
 .first-card img {
-    width: 570px;
+    width: 500px;
     height: 300px;
 }
 

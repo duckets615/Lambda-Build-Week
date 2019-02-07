@@ -3,12 +3,6 @@
     background: lightgrey;
     font-family: 'Yanone Kaffeesatz';
   }
-  .container {
-    margin: 0 auto;
-  }
-  nav {
-    background: #2c2b2b;
-  }
   nav a {
     color: white;
   }
@@ -50,12 +44,6 @@
   body {
     background: lightgrey;
     font-family: 'Yanone Kaffeesatz';
-  }
-  .container {
-    margin: 0 auto;
-  }
-  nav {
-    background: #2c2b2b;
   }
   nav a {
     color: white;
@@ -119,9 +107,13 @@ body {
   font-size: 25px;
   color: rgba(224, 39, 39, 0.767);
   transition: 0.3s;
+  display: block;
 }
 .sidenav a:hover {
   color: #f1f1f1;
+}
+.sidenav :hover {
+  cursor: pointer;
 }
 .sidenav .closebtn {
   position: absolute;
@@ -137,6 +129,9 @@ nav span {
 header .signup {
   background: rgba(224, 39, 39, 0.767);
   color: white;
+  width: 150px;
+  margin-left: 0;
+  text-align: center;
 }
 header {
   margin: auto;
@@ -151,6 +146,11 @@ h1 {
   font-family: 'Yanone Kaffeesatz';
   background: rgba(224, 39, 39, 0.767);
   color: white;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 .top-img {
   width: 500px;
@@ -194,7 +194,6 @@ footer {
   header .signup {
     background: rgba(224, 39, 39, 0.767);
     color: white;
-    margin-left: 400px;
   }
   .top-content img {
     width: 1300px;
@@ -240,7 +239,7 @@ footer {
     color: white;
   }
   .top-content img {
-    width: 1300px;
+    width: 500px;
     height: 300px;
   }
   .first-card img {
@@ -281,17 +280,18 @@ footer {
   header .signup {
     background: rgba(224, 39, 39, 0.767);
     color: white;
-    margin-left: 400px;
   }
   header {
     display: inline-flex;
+    display: flex;
+    flex-direction: row;
   }
   .top-content img {
-    width: 1300px;
+    width: 500px;
     height: 300px;
   }
   .first-card img {
-    width: 570px;
+    width: 500px;
     height: 300px;
   }
   .second-card img {
@@ -327,9 +327,6 @@ footer {
   }
   .container {
     margin: 0 auto;
-  }
-  nav {
-    background: #2c2b2b;
   }
   nav a {
     color: white;
@@ -389,9 +386,6 @@ footer {
   }
   .container {
     margin: 0 auto;
-  }
-  nav {
-    background: #2c2b2b;
   }
   nav a {
     color: white;
