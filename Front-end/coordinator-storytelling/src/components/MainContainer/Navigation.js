@@ -3,6 +3,7 @@ import { Route, NavLink } from 'react-router-dom';
 
 import Content from './Content'
 import About from './About'
+import './Home.css'
 
 const Navigation = () => {
  return(
@@ -13,14 +14,16 @@ const Navigation = () => {
         </NavLink>
         <NavLink to="/about">
               About
-        </NavLink>   
+        </NavLink>  
        
         <a href="submitstory.html">Submit Story</a>
         <a href="contact.html">Contact Us</a>
     </nav>
-    <a class="signup" href="signup.html">Sign Up/Log In</a>
+    <a className="signup" href="signup.html">Sign Up/Log In</a>
     <Route exact path="/" component={Content} />
     <Route exact path="/about" component={About} />
+    <span className="menu" onclick="openNav()">MENU</span>
+
 
 </div>
 

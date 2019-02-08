@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+//import './App.css';
 import Authenticate from './components/authentication/authenticate';
 import MainPage from './components/MainContainer/MainPage'
 import axios from "axios";
