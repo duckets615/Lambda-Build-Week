@@ -132,9 +132,21 @@ table {
 html {
   font-size: 62.5%;
 }
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  background: #575757;
 }
 h1 {
   font-size: 3rem;
@@ -172,9 +184,7 @@ span {
 }
 .sign {
   font-size: 2rem;
-  background: rgba(224, 39, 39, 0.767);
   color: white;
-  max-width: 130px;
 }
 @media (min-width: 500px) {
   .sign {
@@ -183,16 +193,15 @@ span {
   }
 }
 .submit {
-  margin: 0 auto;
+  padding-left: 25%;
+  padding-right: 25%;
   font-size: 2rem;
   background: rgba(224, 39, 39, 0.767);
   color: white;
-  max-width: 130px;
 }
 @media (min-width: 500px) {
   .submit {
     font-size: 2.5rem;
-    max-width: 550px;
   }
 }
 p {
@@ -208,13 +217,22 @@ img {
   width: 100%;
   height: 200px;
   margin: 10px auto;
+  border: 6px solid white;
+}
+@media (min-width: 500px) {
+  img {
+    height: 275px;
+  }
 }
 .top-content {
-  display: flex;
-  flex-direction: column;
   text-align: center;
 }
+.top-img {
+  max-width: 100%;
+  height: 250px;
+}
 .menu {
+  padding-top: 10px;
   margin-left: 10px;
 }
 .menu:hover {
@@ -225,11 +243,14 @@ img {
 }
 @media (min-width: 500px) {
   .mobile {
-    max-width: 45%;
+    max-width: 100%;
   }
 }
 footer {
+  background: #353839;
   text-align: center;
+  height: 70px;
+  padding-top: 5px;
 }
 .about-us {
   max-width: 100%;
@@ -240,7 +261,20 @@ footer {
 @media (min-width: 500px) {
   .desktop {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+  }
+}
+.sign {
+  height: 10px;
+  padding: 0;
+}
+.display {
+  display: none;
+}
+@media (min-width: 800px) {
+  .display {
+    display: block;
   }
 }
 body {
@@ -257,7 +291,7 @@ body {
   /* Stay on top */
   top: 0;
   left: auto;
-  background-color: black;
+  background-color: #353839;
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 60px;
@@ -269,7 +303,7 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: rgba(224, 39, 39, 0.767);
+  color: white;
   transition: 0.3s;
   display: block;
 }
@@ -287,12 +321,14 @@ body {
   margin-left: 50px;
 }
 nav span {
-  background: rgba(224, 39, 39, 0.767);
+  padding-top: 10px;
   color: white;
 }
 header {
   display: flex;
   justify-content: space-between;
+  background: #353839;
+  height: 70px;
 }
 h1 {
   text-align: center;
