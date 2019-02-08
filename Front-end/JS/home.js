@@ -10,12 +10,12 @@ function openNav() {
     document.body.style.backgroundColor = "white";
   };
 
-  const menu = document.querySelector('menu');
-  menu.addEventListener('mouseenter', e => {
-    e.target.style.color = "black";
-  });
+  // const menu = document.querySelectorAll('.menu');
+  // menu.addEventListener('mouseover', e => {
+  //   e.target.style.color = "black";
+  // });
 
-  menu.addEventListener('mouseleave', function (e) {
-    e.target.style.color = "rgba(224, 39, 39, 0.767)";
-  });
+  // menu.addEventListener('mouseleave', function (e) {
+  //   e.target.style.color = "rgba(224, 39, 39, 0.767)";
+  // });
 
