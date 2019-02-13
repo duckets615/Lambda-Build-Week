@@ -1,5 +1,5 @@
 import React from 'react'
-import Login from '../Login/Login.js'
+// import Login from '../MainContainer/Login.js'
 import MainPage from '../MainContainer/MainPage'
 //import axios from "axios";
 
@@ -36,10 +36,10 @@ const Authenticate = App => {
    
     render() {
       return(
-      	this.state.login 
-      			? <MainPage /> 
-      			: <Login 
-      				loggingInInsta = {this.changeLogIn} />
+      
+        <div>
+          
+        </div>
       )
     }
   }

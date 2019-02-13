@@ -10,28 +10,33 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      country: '' 
+      stories: []
     };
   }
 
   componentDidMount(){
+    let auth = {
+      headers: {
+        authorization: localStorage.getItem("token")
+      }
+    };
+    //make axios call for get, but this same process will work for delete, put, and post
     axios
-      .get("https://story2api.herokuapp.com/countries")
-      .then(res =>
-        this.setState(
-          {
-            country: res.data,
-            message: res.statusText
-          },
-          () => console.log(this.state.country)
-        )
-      )
-      .catch(err =>
-        this.setState({
-          error: err
-        })
-      );
+      .get("https://remarkable-story-backend.herokuapp.com/api/stories", auth)
+      .then(res => {
+        console.log(res.data);
+        this.setState({ stories: res.data });
+      })
+      .catch(err => console.log(err));
   };
+
+
+
+
+
+
+
+
 
   render() {
     return (

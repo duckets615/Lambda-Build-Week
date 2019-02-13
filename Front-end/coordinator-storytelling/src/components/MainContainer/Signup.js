@@ -7,13 +7,14 @@ class Signup extends React.Component {
 
     this.state = {
         user: {
-            'job-title': '',
-            'country_name': '',
+            title: '',
+            country: '',
             email: "",
             username: "",
             password: "",
             
-          }
+          },
+        loggedIn: false
      
     };
     // this.handleChange = this.handleChange.bind(this);
@@ -24,24 +25,14 @@ handleRegister = ev => {
     const userObject = this.state.user
     ev.preventDefault()
     axios
-.post("https://story2api.herokuapp.com/register", userObject  )
-.then(res =>
-//   this.setState(
-//     {
-//       username: res.data,
-//       message: res.statusText
-//     },
-//     () => console.log(this.state.country)
-//   )
-// )
+.post("https://remarkable-story-backend.herokuapp.com/api/register", userObject  )
 
-console.log(res)
-)
-.catch(err =>
-  this.setState({
-    error: err
+.then(res => {
+    //console.log(res.data)
+    localStorage.setItem("token", res.data.token);
+    this.setState({ loggedIn: true });
   })
- )
+  .catch(err => console.log(err));
 }
 
   handleChange = ev => {
@@ -53,6 +44,7 @@ console.log(res)
     return(
      <div>
          <h2>Sign Up</h2>
+              {/* <p style={{fontSize: '15px'}}> Name </p> */}
               <input onChange={this.handleChange}
               type="text"
               name="username"
