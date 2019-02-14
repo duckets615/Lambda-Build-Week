@@ -1,11 +1,10 @@
 import React from 'react';
 import { Route, NavLink, Link } from 'react-router-dom';
 
-import Content from './Content'
+
 import About from './About'
 import '../../CSS/home.css'
-import Signup from './Signup';
-import Login from './Login';
+
 
 
 class Navigation extends React.Component{
@@ -35,12 +34,11 @@ class Navigation extends React.Component{
                         <a href="contact.html">Contact Us</a>
                     </div>
                 </nav>
-                < Link to='/signup' className="sign" href="signup.html">Sign Up/Log In</Link>
+                < Link to='/signup' className="sign" href="signup.html">Sign Up</Link>
+                < Link to='/login' className="signin">Sign In</Link>
               </header>
-                <Route path="/signup" component={Signup} />
-                <Route exact path="/" component={Content} />
                 <Route path="/about" component={About} />
-                <Route path="/login" component={Login} />
+             
             </div>
             )
         }

@@ -182,10 +182,18 @@ span {
   }
 }
 .sign {
-  font-size: 2rem;
+  font-size: 25px;
   background: rgba(224, 39, 39, 0.767);
   color: white;
   max-width: 130px;
+  margin-left: 654px;
+}
+.signin {
+  font-size: 25px;
+  background: rgba(224, 39, 39, 0.767);
+  color: white;
+  max-width: 130px;
+  margin-left: 25px
 }
 @media (min-width: 500px) {
   .sign {
