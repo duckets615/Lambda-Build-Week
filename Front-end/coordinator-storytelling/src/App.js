@@ -18,14 +18,13 @@ class App extends Component {
   }
 
 
-
   render() {
     return (
   
       <div className='App'>
       <Authenticate />
         <MainPage />
-        <Route path="/homepage" component={Homepage} />
+        <Route exact path="/homepage" component={Homepage} />
       </div>
    
     );

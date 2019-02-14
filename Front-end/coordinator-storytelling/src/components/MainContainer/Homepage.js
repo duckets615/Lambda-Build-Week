@@ -2,14 +2,13 @@ import React from "react";
 import axios from 'axios'
 
 import Createstory from './Createstory'
-
+import Deletestory from './Deletestory'
 
 class Homepage extends React.Component{
     constructor(){
         super()
         this.state = {
-            stories: [],
-            id: ''
+            stories: []
           };
 
 
@@ -35,24 +34,40 @@ class Homepage extends React.Component{
       };
 
       deleteStories = id => {
+        let auth = {
+            headers: {
+              authorization: localStorage.getItem("token")
+            }
+          };
         axios
-          .delete(`https://remarkable-story-backend.herokuapp.com/api/stories/${id}`)
+          .delete(`https://remarkable-story-backend.herokuapp.com/api/stories/${id}`, auth)
           .then(res => {
             this.setState(
               {
-                message: res.statusText
+                stories: res.data
               },
-              () => this.getData()
             );
           })
-          .catch(err => {
+          .catch(res => {
             this.setState({
-              message: err.statusText
+                 stories: res.data
             });
           });
       };
 
-       
+      handleCreate = userObject => {
+        axios
+    .post("https://remarkable-story-backend.herokuapp.com/api/stories", userObject  )
+    
+    .then(res => {
+        console.log('data',res.data)
+        
+        this.setState({ stories: res.data });
+        	
+      })
+      .catch(err => console.log(err));
+      
+    }
 
 
 
@@ -66,12 +81,13 @@ class Homepage extends React.Component{
                 <p>{story.description}</p>
                 <p>{story.story}</p>
                 <p>{story.country}</p>
-                <button onClick={() => this.deleteStories(this.state.id)} className="btn delete"name="modify">
-                            Delete
-                 </button>
+                <Deletestory deleteStories={this.deleteStories} 
+                id={story.id}
+                />
               </div>
             ))}
-            <Createstory  />
+            
+            <Createstory handleCreate={this.handleCreate}  />
         
             </div>
 

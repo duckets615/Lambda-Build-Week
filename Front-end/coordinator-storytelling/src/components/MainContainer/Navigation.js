@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, NavLink, Link } from 'react-router-dom';
 
-import Content from './Content'
 import About from './About'
 import '../../CSS/home.css'
 import Signup from './Signup';
@@ -39,7 +38,6 @@ class Navigation extends React.Component{
                 < Link to='/login' className="signin" >Log In</Link>
               </header>
                 <Route path="/signup" component={Signup} />
-                <Route exact path="/" component={Content} />
                 <Route path="/about" component={About} />
                 <Route path="/login" component={Login} />
             </div>

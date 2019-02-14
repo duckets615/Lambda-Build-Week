@@ -26,7 +26,7 @@ class Login extends React.Component {
   .post("https://remarkable-story-backend.herokuapp.com/api/login", userObject  )
   
   .then(res => {
-		//console.log(res.data)
+		console.log(res.data)
 	  localStorage.setItem("token", res.data.token);
 		this.setState({ loggedIn: true });
 		this.props.history.push('/homepage')		
@@ -50,8 +50,8 @@ class Login extends React.Component {
 				placeholder="Name"
 			  />
 			   <br></br>
-				   <input onChange={this.handleChange}
-				type="text"
+				<input onChange={this.handleChange}
+				type="password"
 				name="password"
 				placeholder="password"
 			  />
@@ -61,7 +61,7 @@ class Login extends React.Component {
    
    
   
-	
+
   
   
 	   </div>
