@@ -6,15 +6,14 @@ class Signup extends React.Component {
     super(props);
 
     this.state = {
-        user: {
-            title: '',
-            country: '',
-            email: "",
-            username: "",
-            password: "",
-            
-          },
-        loggedIn: false
+      title: '',
+      country: '',
+      email: "",
+      username: "",
+      password: "",
+      loggedIn: false
+      
+         
      
     };
     // this.handleChange = this.handleChange.bind(this);
@@ -22,7 +21,13 @@ class Signup extends React.Component {
 
 
 handleRegister = ev => {
-    const userObject = this.state.user
+    const userObject = {
+      title: this.state.title,
+      country: this.state.country,
+      email: this.state.email,
+      username: this.state.username,
+      password: this.state.password
+    }
     ev.preventDefault()
     axios
 .post("https://remarkable-story-backend.herokuapp.com/api/register", userObject  )
@@ -53,13 +58,13 @@ handleRegister = ev => {
             <br></br>
               <input onChange={this.handleChange}
               type="text"
-              name="job-title"
+              name="title"
               placeholder="JobTitle"
             />
              <br></br>
                <input onChange={this.handleChange}
               type="text"
-              name="country_name"
+              name="country"
               placeholder="Country Name"
             />
              <br></br>
@@ -69,14 +74,8 @@ handleRegister = ev => {
               placeholder="Email"
             />
              <br></br>
-                <input onChange={this.handleChange}
-              type="text"
-              name="username"
-              placeholder="Username"
-            />
-             <br></br>
                  <input onChange={this.handleChange}
-              type="text"
+              type="password"
               name="password"
               placeholder="Password"
             />

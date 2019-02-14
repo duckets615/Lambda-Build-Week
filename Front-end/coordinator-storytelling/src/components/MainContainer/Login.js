@@ -6,12 +6,9 @@ class Login extends React.Component {
 	  super(props);
   
 	  this.state = {
-		  user: {
-			  username: "",
-			  password: "",
-			  
-			},
-		  loggedIn: false
+			username: "",
+			password: "",
+			loggedIn: false
 	   
 	  };
 	  // this.handleChange = this.handleChange.bind(this);
@@ -19,15 +16,20 @@ class Login extends React.Component {
   
   
   handleLogin = ev => {
-	  const userObject = this.state.user
+	  const userObject = {
+        username: this.state.username,
+        password: this.state.password
+
+		}
 	  ev.preventDefault()
 	  axios
   .post("https://remarkable-story-backend.herokuapp.com/api/login", userObject  )
   
   .then(res => {
-	  //console.log(res.data)
+		//console.log(res.data)
 	  localStorage.setItem("token", res.data.token);
-	  this.setState({ loggedIn: true });
+		this.setState({ loggedIn: true });
+		this.props.history.push('/homepage')		
 	})
 	.catch(err => console.log(err));
   }
@@ -40,7 +42,7 @@ class Login extends React.Component {
 	render(){
 	  return(
 	   <div>
-		   <h2>Sign Up</h2>
+		   <h2>Log In</h2>
 				{/* <p style={{fontSize: '15px'}}> Name </p> */}
 				<input onChange={this.handleChange}
 				type="text"
@@ -51,7 +53,7 @@ class Login extends React.Component {
 				   <input onChange={this.handleChange}
 				type="text"
 				name="password"
-				placeholder="Password"
+				placeholder="password"
 			  />
 			  <br></br>
 			  <button onClick={this.handleLogin}>SUBMIT</button>

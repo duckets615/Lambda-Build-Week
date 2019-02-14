@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import Authenticate from './components/authentication/authenticate';
 import MainPage from './components/MainContainer/MainPage'
 import axios from "axios";
+import { Route, NavLink, Link } from 'react-router-dom';
+import Homepage from './components/MainContainer/Homepage'
+
 
 
 
@@ -14,28 +17,6 @@ class App extends Component {
     };
   }
 
-  componentDidMount(){
-    let auth = {
-      headers: {
-        authorization: localStorage.getItem("token")
-      }
-    };
-    //make axios call for get, but this same process will work for delete, put, and post
-    axios
-      .get("https://remarkable-story-backend.herokuapp.com/api/stories", auth)
-      .then(res => {
-        console.log(res.data);
-        this.setState({ stories: res.data });
-      })
-      .catch(err => console.log(err));
-  };
-
-
-
-
-
-
-
 
 
   render() {
@@ -44,7 +25,7 @@ class App extends Component {
       <div className='App'>
       <Authenticate />
         <MainPage />
-        
+        <Route path="/homepage" component={Homepage} />
       </div>
    
     );

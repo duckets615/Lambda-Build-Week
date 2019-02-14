@@ -35,7 +35,8 @@ class Navigation extends React.Component{
                         <a href="contact.html">Contact Us</a>
                     </div>
                 </nav>
-                < Link to='/signup' className="sign" href="signup.html">Sign Up/Log In</Link>
+                < Link to='/signup' className="sign" >Sign Up</Link>
+                < Link to='/login' className="signin" >Log In</Link>
               </header>
                 <Route path="/signup" component={Signup} />
                 <Route exact path="/" component={Content} />

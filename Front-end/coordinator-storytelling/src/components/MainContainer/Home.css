@@ -174,11 +174,20 @@ span {
   }
 }
 .sign {
-  font-size: 2rem;
+  font-size: 24px;
   background: rgba(224, 39, 39, 0.767);
   color: white;
   max-width: 130px;
+  margin-left: 737px;
 }
+.signin{
+  font-size: 24px;
+  background: rgba(224, 39, 39, 0.767);
+  color: white;
+  max-width: 130px;
+
+}
+
 @media (min-width: 500px) {
   .sign {
     font-size: 2.5rem;
@@ -299,4 +308,17 @@ header {
 }
 h1 {
   text-align: center;
+}
+
+
+.main_items{
+  display: flex;
+  flex-direction: column;
+  text-align: center
+}
+
+
+.items{
+  border: 1px solid red;
+  width: 165px;
 }
