@@ -192,18 +192,6 @@ span {
     max-width: 550px;
   }
 }
-.submit {
-  padding-left: 25%;
-  padding-right: 25%;
-  font-size: 2rem;
-  background: rgba(224, 39, 39, 0.767);
-  color: white;
-}
-@media (min-width: 500px) {
-  .submit {
-    font-size: 2.5rem;
-  }
-}
 p {
   font-size: 1.5rem;
   margin: 15px 0;
@@ -275,6 +263,18 @@ footer {
 @media (min-width: 800px) {
   .display {
     display: block;
+  }
+}
+.top-content .submit-share {
+  padding-left: 25%;
+  padding-right: 25%;
+  font-size: 2rem;
+  background: rgba(224, 39, 39, 0.767);
+  color: white;
+}
+@media (min-width: 500px) {
+  .top-content .submit-share {
+    font-size: 2.5rem;
   }
 }
 body {

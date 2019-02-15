@@ -1,3 +1,5 @@
+
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
@@ -18,10 +20,6 @@ function openNav() {
   {"class":"topImg", "picture":"lake and mountains", "position":"fits page width"}]
 
   console.log(cards);
-  // // concat()
-  // // var new_array = old_array.concat([value1[, value2[, ...[, valueN]]]])
-  // let item = cards.map(card => card.class)
-
 
   const firstCard = {
     person1:"Tigran",
@@ -53,6 +51,7 @@ function openNav() {
 console.log(card);
 
 
+
 function Characteristics(attributes) {
   this.name = attributes.name;
   this.lastName = attributes.lastName;
@@ -64,3 +63,12 @@ const queen = new Characteristics({
 });
 
 console.log(queen.name)
+
+const submitBtn = document.querySelector('.submit-share');
+submitBtn.addEventListener('mouseover', function (e) {
+  e.target.style.backgroundColor = "black";
+});
+
+submitBtn.addEventListener('mouseleave', function (e) {
+  e.target.style.backgroundColor = "rgba(224, 39, 39, 0.767)";
+});
