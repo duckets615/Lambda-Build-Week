@@ -1,5 +1,5 @@
 import React from "react";
-import axios from 'axios'
+//import axios from 'axios'
 import './Home.css'
 
 
@@ -58,9 +58,10 @@ class Createstory extends React.Component{
     
       render(){
         return(
-         <div className='create_items'>
+         <div className='create_stories'>
              <h2>Create Story</h2>
                   {/* <p style={{fontSize: '15px'}}> Name </p> */}
+                  <p>Title:</p>
                   <input onChange={this.handleChange}
                   type="text"
                   name="title"
@@ -68,6 +69,7 @@ class Createstory extends React.Component{
                   value={this.state.title}
                 />
                 <br></br>
+                  <p style={{marginLeft:'52px'}}>Description:</p>
                   <input onChange={this.handleChange}
                   type="text"
                   name="description"
@@ -75,33 +77,43 @@ class Createstory extends React.Component{
                   value={this.state.description}
                 />
                  <br></br>
-                   <input onChange={this.handleChange}
+                  <p>Story:</p>
+                  <input onChange={this.handleChange}
                   type="text"
                   name="story"
                   placeholder="Story"
                   value={this.state.story}
                 />
-                 <br></br>
-                 <input onChange={this.handleChange}
-                  type="text"
-                  name="date"
-                  placeholder="Date"
-                  value={this.state.date}
-                />
-                   <br></br>
-                    <input onChange={this.handleChange}
-                  type="text"
-                  name="country"
-                  placeholder="Country"
-                  value={this.state.country}
-                />
                 <br></br>
-                <input onChange={this.handleChange}
-                  type="text"
-                  name="user_id"
-                  placeholder="User ID"
-                  value={this.state.user_id}
-                />
+                  <p style={{marginLeft:'22px'}}>Country:</p>
+                <select 
+                name="country" 
+                value={this.state.country} 
+                onChange={this.handleChange}
+                required
+            >
+                <option value="Brazil">Brazil</option>
+                <option value="Bolvia">Bolvia</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+
+            
+             
                  
                 <br></br>
                 <button onClick={this.createStory}>SUBMIT</button>
