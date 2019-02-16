@@ -9,7 +9,6 @@ class MainPage extends Component {
     return (
     <div className='main'>
       <Navigation />
-      
     </div>
     )
   }

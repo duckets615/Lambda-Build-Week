@@ -36,6 +36,7 @@ handleRegister = ev => {
     //console.log(res.data)
     localStorage.setItem("token", res.data.token);
     this.setState({ loggedIn: true });
+    this.props.history.push('/login')	
   })
   .catch(err => console.log(err));
 }
@@ -47,40 +48,44 @@ handleRegister = ev => {
 
   render(){
     return(
-     <div>
+     <div className="signup">
          <h2>Sign Up</h2>
-              {/* <p style={{fontSize: '15px'}}> Name </p> */}
+              <p style={{}}> Name </p>
               <input onChange={this.handleChange}
               type="text"
               name="username"
               placeholder="Name"
             />
             <br></br>
+              <p style={{}}> Title </p>
               <input onChange={this.handleChange}
               type="text"
               name="title"
               placeholder="JobTitle"
             />
              <br></br>
-               <input onChange={this.handleChange}
+              <p style={{}}> Country </p>
+              <input onChange={this.handleChange}
               type="text"
               name="country"
               placeholder="Country Name"
             />
              <br></br>
-                <input onChange={this.handleChange}
+              <p style={{}}> Email </p>
+              <input onChange={this.handleChange}
               type="text"
               name="email"
               placeholder="Email"
             />
              <br></br>
-                 <input onChange={this.handleChange}
+              <p style={{}}> Password </p>
+              <input onChange={this.handleChange}
               type="password"
               name="password"
               placeholder="Password"
             />
             <br></br>
-            <button onClick={this.handleRegister}>SUBMIT</button>
+            <button className='signupbutton' onClick={this.handleRegister} >SUBMIT</button>
  
  
  

@@ -3,95 +3,44 @@ import React from "react";
 import './Home.css'
 
 
-class Createstory extends React.Component{
-    constructor(){
-        super()
-        this.state = {
-            title: "",
-            description: "",
-            story: "",
-            date: "",
-            country: "",
-            user_id: ""
-          };
-
-
-
-
-    }
-
-
-   
+const Createstory = (props) => {
     
-      handleChange = ev => {
-        this.setState({ [ev.target.name]: ev.target.value })
-    
-    }
-
-    createStory = ev => {
-        ev.preventDefault()
-        const userObject = {
-            title: this.state.title,
-            description: this.state.description,
-            story: this.state.story,
-            date: this.state.date,
-            country: this.state.country,
-            user_id: this.state.user_id
-            
-        }
-        
-        this.setState({
-            title: '',
-            description: '',
-            story: '',
-            date: '',
-            country: '',
-            user_id: ''
-        }
-        
-    )
-    this.props.handleCreate(userObject)
-        
-
-    }
-      
-    
-      render(){
-        return(
+    return(
          <div className='create_stories'>
              <h2>Create Story</h2>
                   {/* <p style={{fontSize: '15px'}}> Name </p> */}
                   <p>Title:</p>
-                  <input onChange={this.handleChange}
+                  <input onChange={props.handleChange}
                   type="text"
                   name="title"
                   placeholder="Title"
-                  value={this.state.title}
+                  value={props.story.title}
                 />
                 <br></br>
-                  <p style={{marginLeft:'52px'}}>Description:</p>
-                  <input onChange={this.handleChange}
+                  <p style={{marginLeft:'1px'}}>Description:</p>
+                  <input onChange={props.handleChange}
                   type="text"
                   name="description"
                   placeholder="Description"
-                  value={this.state.description}
+                  value={props.story.description}
                 />
                  <br></br>
                   <p>Story:</p>
-                  <input onChange={this.handleChange}
+                  <input onChange={props.handleChange}
                   type="text"
                   name="story"
                   placeholder="Story"
-                  value={this.state.story}
+                  value={props.story.story}
                 />
                 <br></br>
-                  <p style={{marginLeft:'22px'}}>Country:</p>
+                  <p style={{marginLeft:'1px'}}>Country:</p>
                 <select 
                 name="country" 
-                value={this.state.country} 
-                onChange={this.handleChange}
+                value={props.story.country} 
+                onChange={props.handleChange}
                 required
             >
+                <option> Please select a Country</option>
                 <option value="Brazil">Brazil</option>
                 <option value="Bolvia">Bolvia</option>
                 <option value="Cambodia">Cambodia</option>
@@ -116,7 +65,7 @@ class Createstory extends React.Component{
              
                  
                 <br></br>
-                <button onClick={this.createStory}>SUBMIT</button>
+                <button className='createbutton' onClick={ (ev) => props.isUpdating ? props.updateStory(ev) : props.createStory(ev) }>SUBMIT</button>
                 
      
      
@@ -129,8 +78,5 @@ class Createstory extends React.Component{
         )
     
       }
-
-
-}
 
 export default Createstory

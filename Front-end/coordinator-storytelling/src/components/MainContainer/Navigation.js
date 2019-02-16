@@ -5,6 +5,8 @@ import About from './About'
 import '../../CSS/home.css'
 import Signup from './Signup';
 import Login from './Login';
+import Homepage from './Homepage';
+import Welcome from '../Welcome';
 
 
 class Navigation extends React.Component{
@@ -29,9 +31,8 @@ class Navigation extends React.Component{
                         <NavLink to="/about">
                             About
                         </NavLink>  
-       
-                        <a href="submitstory.html">Submit Story</a>
-                        <a href="contact.html">Contact Us</a>
+                        <Link to='/login'>Submit Story</Link>
+                        <Link to='/login'>Contact Us</Link>
                     </div>
                 </nav>
                 < Link to='/signup' className="sign" >Sign Up</Link>
@@ -40,6 +41,8 @@ class Navigation extends React.Component{
                 <Route path="/signup" component={Signup} />
                 <Route path="/about" component={About} />
                 <Route path="/login" component={Login} />
+                <Route path="/homepage" component={Homepage} />
+                <Route exact path="/" component={Welcome} />
             </div>
             )
         }

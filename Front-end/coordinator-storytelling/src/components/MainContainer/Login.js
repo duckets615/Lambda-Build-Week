@@ -22,14 +22,13 @@ class Login extends React.Component {
 
 		}
 	  ev.preventDefault()
-	  axios
-  .post("https://remarkable-story-backend.herokuapp.com/api/login", userObject  )
-  
-  .then(res => {
-		console.log(res.data)
-	  localStorage.setItem("token", res.data.token);
-		this.setState({ loggedIn: true });
-		this.props.history.push('/homepage')		
+		axios
+		 .post("https://remarkable-story-backend.herokuapp.com/api/login", userObject  )
+		 	.then(res => {
+				console.log(res.data)
+	  		localStorage.setItem("token", res.data.token);
+				this.setState({ loggedIn: true });
+				this.props.history.push('/homepage')		
 	})
 	.catch(err => console.log(err));
   }
@@ -41,35 +40,29 @@ class Login extends React.Component {
   
 	render(){
 	  return(
-	   <div>
+	   <div className="loginform">
 		   <h2>Log In</h2>
-				{/* <p style={{fontSize: '15px'}}> Name </p> */}
+			 <p style={{marginLeft:'1px'}}>Username:</p>
 				<input onChange={this.handleChange}
 				type="text"
 				name="username"
-				placeholder="Name"
+				placeholder="Username"
 			  />
 			   <br></br>
+				<p style={{marginLeft:'1px'}}>Password:</p>
 				<input onChange={this.handleChange}
 				type="password"
 				name="password"
-				placeholder="password"
+				placeholder="Password"
 			  />
 			  <br></br>
-			  <button onClick={this.handleLogin}>SUBMIT</button>
-   
-   
-   
+			  <button className='loginbutton' onClick={this.handleLogin}>SUBMIT</button>
+    </div>
   
-
-  
-  
-	   </div>
-  
-	  )
+	   )
   
 	}
 	
-  }
+}
   
   export default Login

@@ -316,25 +316,71 @@ h1 {
 
 
 .main_items{
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  /* flex-direction: column; */
   text-align: center
 }
-
+.create_stories{
+  width: 200px;
+  border: 1px solid black;
+  padding-left: 11px;
+  height: 270px;
+  margin-top: 21px;
+}
 
 .items{
   border: 1px solid red;
-  width: 165px;
+  float: right;
+  border-radius: 25px;
+  width: 235px;
 }
+
+item_list{
+  width: 800px
+}
+
+
+
 
 .items p{
   font-size: 20px
 }
 
 .create_stories p{
-  margin: 0 126px 2px 0;
+  margin: 0 126px 2px 1px;
   font-weight: 400;
   font-size: 20px;
 }
 
+.createbutton{
+  margin-top: 7px;
+  margin-left: 48px;
+}
+
+.loginform{
+  width: 272px;
+  margin: 0 auto 1em auto;
+}
+
+.loginform p{
+  margin: 0 126px 2px 0;
+  font-weight: 100;
+  font-size: 18px;
+}
+.loginbutton{
+  margin-left: 45px
+}
+
+.signup{
+  width: 272px;
+  margin: 0 auto 1em auto;
+}
+.signup p{
+  margin: 0 126px 2px 0;
+  font-weight: 100;
+  font-size: 18px;
+}
+.signupbutton{
+  margin-left: 45px
+}
 
